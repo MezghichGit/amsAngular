@@ -1,1 +1,9 @@
 <h1 align="center">List des produits</h1>
+<table align="center" border="1" class="table table-striped">
+<tr><th>Nom produit</th><th>Prix</th></tr>
+<tr *ngFor="let produit of tabProduits">
+  <td>{{produit.nom}}</td>
+  <td>{{produit.prix}}</td>
+</tr>
+</table>
+<button class="btn btn-primary">Cliquer</button>
