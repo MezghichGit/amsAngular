@@ -1,18 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Produit } from '../Modeles/modeles';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProduitService {
-  produits: Produit[] = [
+  produits: Produit[] =[];/*= [
     { "nom": "PC HP", "prix": 1000 },
     { "nom": "Imprimante", "prix": 400 },
     { "nom": "Smart Phone", "prix": 900 }
-  ]
-  constructor() { }
+  ]*/
+  constructor(private http:HttpClient) { }
 
   getListProduits() {
-    return this.produits;
+   // return this.produits;
+   return this.http.get("http://127.0.0.1:81/list");
   }
 }
