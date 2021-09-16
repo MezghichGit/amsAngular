@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./list-provider.component.css']
 })
 export class ListProviderComponent implements OnInit {
+  name="anis";
   visibilite:boolean=false;
   providers: any;
   chemin:string="https://blog.oxiane.com/wp-content/uploads/2021/02/spring_boog_400x400.png";
