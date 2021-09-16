@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddProviderComponent } from './add-provider/add-provider.component';
 import { ListProviderComponent } from './list-provider/list-provider.component';
 import { UpdateProviderComponent } from './update-provider/update-provider.component';
+import { CimipipePipe } from './pipes/cimipipe.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UpdateProviderComponent } from './update-provider/update-provider.compo
     NavbarComponent,
     AddProviderComponent,
     ListProviderComponent,
-    UpdateProviderComponent
+    UpdateProviderComponent,
+    CimipipePipe
   ],
   imports: [
     BrowserModule,
